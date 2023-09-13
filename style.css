@@ -1,0 +1,429 @@
+/*importar fuentes para texto*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*quitar estilos por defecto de html*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*estilos para el header*/
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #EFF3F4;
+    padding: 130px 0 0 0;
+}
+
+/*estilos para el menu de navegacion*/
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111419;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f50c04;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*estilos para el header */
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+span{
+    color: #f50c04;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.header-txt{
+    font-size: 70px;
+    text-transform:capitalize;
+    line-height: 1;
+    color: #111419;
+    margin-bottom: 35px;
+}
+
+.butons{
+    display: flex;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #f50c04;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+.header-img{
+    flex-basis: 100%;
+}
+
+.header-img img{
+    height: 400px;
+}
+
+.btn-1:hover{
+    background-color: #01414d;
+}
+
+/*estilos para la primera sección datos personales */
+
+.personal{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-1{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-1:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.b1{
+    background-color: #ba9df4;
+}
+
+.b2{
+    background-color:#ff6565;
+}
+
+.b3{
+    background-color:#c3dff9
+
+    ;
+}
+
+.personal-txt{
+    flex-basis: 50%;
+}
+
+.personal-txt h3{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.personal-txt a{
+    color: #FFFFFF;
+}
+
+.personal-img {
+    flex-basis: 50%;
+}
+
+/*estilos para la segunda sección estudios realizados*/
+
+.estudios{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    color: #111419;
+}
+
+.box-container{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box{
+    border-top: 2px solid #f50c04;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background-color: #f6fafb;
+    display: none;
+}
+
+.box:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4) {
+    display: inline-block;
+}
+
+.box img{
+    height: 200px;
+}
+
+.estudios-txt h3{
+    font-size: 20px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.estudios-txt p{
+    margin-bottom: 25px;
+    color: #515557;
+}
+
+.uni{
+    font-size: 17px;
+    font-weight: 700;
+    color: #f50c04 !important;
+}
+
+/*estilos para la tercera sección experiencia laboral*/
+
+.experiencia {
+    padding: 100px 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.experiencia-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.experiencia-1 {
+    flex-basis: calc(50% - 20px);
+    padding: 50px;
+    text-align: left;
+    background-color: #f6faf8;
+    border-top: 5px solid #f50c04;
+}
+
+.experiencia-1 img{
+    width: 100px;
+}
+
+.experiencia-1 h4{
+    font-size: 17px;
+    color: #111419;
+}
+
+.experiencia-1 p{
+    color: #515557;
+    margin-bottom: 25px;
+}
+
+/*estilos para el pie de pagina*/
+
+.footer{
+    background-color: #1f1f35;
+    padding: 100px 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a{
+    color: #aeafaa;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color:#f50c04
+}
+
+
+.derechos{
+    padding: 100px 30px;
+    text-align: right;
+    justify-content: right;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/*responsive para dispositivos moviles*/
+
+@media (max-width:991px){
+
+    .menu{
+        padding:20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+    
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f50c04;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #FFFFFF
+    }
+
+    .header{
+        padding: 50px 0 0 0;
+    }
+
+    .header-content{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin-right: 0;
+    }
+
+    .butons {
+        justify-content: center;
+    }
+
+    .btn-1{
+        margin-bottom: 0;
+    }
+
+    .header-img{
+        display: none;
+        flex-direction: column;
+    }
+
+    .personal{
+        padding: 30px;
+    }
+
+    .personal-1{
+        margin-bottom: 15px;
+    }
+
+    .estudios{
+        padding: 0 30px 30px 30px;
+    }
+
+    .experiencia{
+        padding: 30px;
+    }
+
+    .experiencia-content{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .experiencia-1{
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
